@@ -42,13 +42,29 @@ import pandas as pd
 
 # Task1:
 
-d = {"a":100,"b":200,"c":300}
-s = pd.Series(d)
-print(s)
-print(s+50) #task 2
-print(s>200)#task 3
-print(s.isnull)#task 4
+# d = {"a":100,"b":200,"c":300}
+# s = pd.Series(d)
+# print(s)
+# print(s+50) #task 2
+# print(s>200)#task 3
+# print(s.isnull)#task 4
 
+data = {
+    "name":["Deepak ","Rahul","Anita"],
+    "age":[20,21,22],
+    "marks":[85,90,88]
+}
 
+df = pd.DataFrame(data)
+print(df)
+
+print(df.shape)
+print(df.size)
+print(df.ndim)
+print(df.columns)
+print(df.index)
+print(df.head(2))
+print(df.tail())
+print(df.info())
 
 

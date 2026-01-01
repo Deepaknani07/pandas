@@ -49,22 +49,44 @@ import pandas as pd
 # print(s>200)#task 3
 # print(s.isnull)#task 4
 
-data = {
-    "name":["Deepak ","Rahul","Anita"],
-    "age":[20,21,22],
-    "marks":[85,90,88]
-}
+# data = {
+#     "name":["Deepak ","Rahul","Anita"],
+#     "age":[20,21,22],
+#     "marks":[85,90,88]
+# }
 
+# df = pd.DataFrame(data)
+# print(df)
+
+# print(df.shape)
+# print(df.size)
+# print(df.ndim)
+# print(df.columns)
+# print(df.index)
+# print(df.head(2))
+# print(df.tail())
+# print(df.info())
+# # print(df["name"])
+# # print(df["name","age"])
+# print(df.loc[0])
+
+# task1:
+
+data =[
+    {"Name":"A","Marks":80,"Grade":"B"},
+    {"Name":"B","Marks":90,"Grade":"A"},
+    {"Name":"C","Marks":70,"Grade":"c"},
+    
+] 
 df = pd.DataFrame(data)
 print(df)
-
-print(df.shape)
-print(df.size)
-print(df.ndim)
-print(df.columns)
-print(df.index)
+#task2
 print(df.head(2))
-print(df.tail())
 print(df.info())
+
+#task 3:
+df["PASSED"]=["Yes","YES","NO"]
+print(df)
+
 
 

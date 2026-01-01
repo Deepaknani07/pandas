@@ -32,13 +32,22 @@ import pandas as pd
 # print(s1+s2)
 # print(s1*s2)
 
-s = pd.Series([10,25,30,5])
-print(s>20) #it gives the boolean values
-print(s[s>20]) #it gives the integer values
+# s = pd.Series([10,25,30,5])
+# print(s>20) #it gives the boolean values
+# print(s[s>20]) #it gives the integer values
 
-s = pd.Series([10,None,30])
-print(s.isnull()) #it gives the boolean values
-print(s.fillna(0))# it gives the float values
+# s = pd.Series([10,None,30])
+# print(s.isnull()) #it gives the boolean values
+# print(s.fillna(0))# it gives the float values
+
+# Task1:
+
+d = {"a":100,"b":200,"c":300}
+s = pd.Series(d)
+print(s)
+print(s+50) #task 2
+print(s>200)#task 3
+print(s.isnull)#task 4
 
 
 
